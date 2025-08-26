@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Check App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .section ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .gallery img {
+  width: calc(33% - 10px);
+  border-radius: 6px;
+  height: 180px;
+  object-fit: cover;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(2);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  z-index: 10;
+  position: relative;
+}
+
+
+    .buttons {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 8px;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #222;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .gallery img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Weather Check App</h1>
+    <p>Real-time weather updates using OpenWeather API</p>
+  </div>
+
+  <div class="section">
+    <h2>Project Overview</h2>
+    <p>This Weather Check App allows users to enter any city and instantly get the current weather conditions, including temperature, humidity, and wind speed. It's powered by the OpenWeatherMap API and built using basic web technologies.</p>
+  </div>
+
+  <div class="section">
+    <h2>Features</h2>
+    <ul>
+      <li>Search weather by city name</li>
+      <li>Displays temperature, humidity, and wind speed</li>
+      <li>Live data fetched via OpenWeather API</li>
+      <li>Minimal, responsive interface</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Technologies Used</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>API: OpenWeatherMap</li>
+      <li>Fetch API for data handling</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Project Screenshots</h2>
+    <div class="gallery">
+      
+      <img src="/Portfolio/images/projecti/A.png" alt="Weather Info View">
+      <img src="/Portfolio/images/projecti/B.png" alt="Humidity and Wind Example">
+      <img src="/Portfolio/images/projecti/C.png" alt="Humidity and Wind Example">
+    </div>
+  </div>
+
+  <div class="buttons">
+    <a href="https://github.com/PiyushGaywal/Projects/tree/main/Weather">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://684141aaa9d5237d6cba8edb--stupendous-medovik-b3ca4f.netlify.app/">
+      <i class="fas fa-external-link-alt"></i> Live Demo
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 Piyush Gaywal | Weather Check App
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piyush Gaywal | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body class="dark">
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Piyush Gaywal</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Piyushgaywal.pdf" download class="resume-btn">Resume</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="section home-section">
+    <img src="/Portfolio/images/PP.jpg" alt="Profile Photo" class="profile-pic" />
+    <h1>Hi, I'm <span>Piyush Gaywal</span></h1>
+    <p>Web Developer | Trader | Learner</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/piyushgaywal/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/PiyushGaywal" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/piyush.gaywal/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a Bachelor of Computer Application (BCA) student currently pursuing my degree at MIT ADT University, Pune. I have a strong passion for full-stack web development, with hands-on experience in building dynamic, responsive, and user-friendly web applications. My academic background combined with self-driven project work in both front-end and back-end  technologies
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card"><i class="fab fa-html5"></i> HTML</div>
+      <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS</div>
+      <div class="skill-card"><i class="fab fa-js-square"></i> JavaScript</div>
+      <div class="skill-card"><i class="fab fa-node-js"></i> Node.js</div>
+      <div class="skill-card"><i class="fas fa-database"></i> MongoDB</div>
+      <div class="skill-card"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+      <div class="skill-card"><i class="fas fa-server"></i> Express.js</div>
+    </div>
+  </section>
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Code-Paradox</h3>
+        <p>A Real Time Code-Editor That Run And Collab The Code</p>
+        <a href="/Portfolio//projects/code-paradox.html">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Blogify</h3>
+        <p>A web app for exploring the blogs on interesting topics</p>
+        <a href="/Portfolio/projects/blogify.html">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Hotel Booking App</h3>
+        <p>A full-stack hotel booking application using Node.js and MongoDB.</p>
+        <a href="/Portfolio/projects/hotel.html">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>A weather checking app created using API</p>
+        <a href="/Portfolio//projects/weather.html">View Project</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="education-container">
+
+      <div class="edu-card">
+        <img src="/Portfolio/images/adt-logo.jpg" alt="College Logo" class="edu-logo">
+        <div class="edu-info">
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p>MIT Art, Design & Technology University | 2023 – 2026</p>
+        </div>
+      </div>
+
+      <div class="edu-card">
+        <img src="/Portfolio/images/stateBoard.jpeg" alt="School Logo" class="edu-logo">
+        <div class="edu-info">
+          <h3>Secondary School</h3>
+          <p> BPHE Society's Ahmednagar college | 2021 – 2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/mjkrgzov" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea rows="4" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Piyush Gaywal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
